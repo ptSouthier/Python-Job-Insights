@@ -71,10 +71,8 @@ def matches_salary_range(job, salary):
         raise ValueError
     elif job["min_salary"] > job["max_salary"]:
         raise ValueError
-    elif job["min_salary"] <= salary <= job["max_salary"]:
-        return True
     else:
-        return False
+        return job["min_salary"] <= salary <= job["max_salary"]
 
 
 def filter_by_salary_range(jobs, salary):
