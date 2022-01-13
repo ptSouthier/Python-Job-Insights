@@ -65,7 +65,6 @@ def get_max_salary(path):
             pass
 
     return max_salary
-    # pass
 
 
 def get_min_salary(path):
